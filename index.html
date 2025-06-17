@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>Inicio - Motos Racing</title>
+  <style>
+    
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f9f9f9;
+      line-height: 1.6; 
+    }
+
+    header,
+    footer {
+      background-color: #111;
+      color: white;
+      text-align: center;
+      padding: 1em;
+    }
+
+    
+    nav {
+      background-color: #333; 
+      padding: 10px 0;
+    }
+
+    nav a {
+      margin: 0 10px; 
+      color: white;
+      text-decoration: none;
+      padding: 8px 15px;
+      border-radius: 4px;
+      display: inline-block; 
+    }
+
+    nav a:hover {
+      background: #444;
+    }
+
+    
+    .container {
+      padding: 20px;
+      text-align: center;
+      max-width: 1200px; 
+      margin: 20px auto; 
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    img.banner {
+      width: 100%;
+      max-height: 300px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 20px; 
+    }
+
+    h1 {
+      margin-top: 0;
+    }
+
+    h2 {
+      color: #333;
+    }
+
+    p {
+      color: #555;
+    }
+
+    
+
+    
+    @media screen and (max-width: 768px) {
+      nav a {
+        display: block; 
+        margin: 5px auto; 
+        width: calc(100% - 20px); 
+        max-width: 300px; 
+      }
+
+      .container {
+        padding: 15px; 
+        margin: 15px;
+      }
+
+      img.banner {
+        max-height: 200px; 
+      }
+    }
+
+    
+    @media screen and (max-width: 480px) {
+      header h1 {
+        font-size: 1.8em; 
+      }
+
+      nav a {
+        padding: 10px; 
+        font-size: 0.9em; 
+      }
+
+      .container {
+        padding: 10px;
+        margin: 10px;
+      }
+
+      img.banner {
+        max-height: 150px; 
+      }
+
+      h2 {
+        font-size: 1.3em;
+      }
+
+      p {
+        font-size: 0.9em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Motos Racing</h1>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="catalogo.html">Catálogo</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+  </header>
+  <div class="container">
+    <img class="banner" src="https://images.unsplash.com/photo-1615996001375-9dc60b469fd0" alt="Moto deportiva">
+    <h2>Bienvenido a Motos Racing</h2>
+    <p>Tu tienda especializada en motocicletas deportivas, urbanas y de aventura.</p>
+  </div>
+  <footer>
+    <p>&copy; 2025 Motos Racing</p>
+  </footer>
+</body>
+</html>

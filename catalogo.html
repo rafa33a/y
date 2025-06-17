@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>Catálogo - Motos Racing</title>
+  <style>
+    
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f4f4f4;
+      line-height: 1.6; 
+    }
+
+    header,
+    footer {
+      background: #111;
+      color: white;
+      text-align: center;
+      padding: 1em;
+    }
+
+    
+    nav {
+      background-color: #333; 
+      padding: 10px 0;
+    }
+
+    nav a {
+      margin: 0 10px; 
+      color: white;
+      text-decoration: none;
+      padding: 8px 15px;
+      border-radius: 4px;
+      display: inline-block; 
+    }
+
+    nav a:hover {
+      background: #444;
+    }
+
+   
+    .container {
+      display: grid;
+      
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 20px;
+      max-width: 1200px;
+      margin: 20px auto; 
+    }
+
+    .card {
+      background: white;
+      padding: 15px;
+      border-radius: 8px;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      display: flex; 
+      flex-direction: column; 
+      justify-content: space-between; 
+      height: 100%; 
+    }
+
+    .card img {
+      max-width: 100%;
+      height: 180px; 
+      object-fit: cover; 
+      border-radius: 5px;
+      margin-bottom: 10px; 
+    }
+
+    .card h3 {
+      margin-top: 10px;
+      margin-bottom: 5px;
+      color: #333;
+    }
+
+    .card p {
+      color: #555;
+      font-size: 0.9em;
+      flex-grow: 1; 
+    }
+
+    
+
+    
+    @media screen and (max-width: 768px) {
+      nav a {
+        display: block; 
+        margin: 5px auto; 
+        width: calc(100% - 20px); 
+        max-width: 250px; 
+      }
+
+      .container {
+        padding: 15px; 
+        gap: 15px; 
+      }
+
+      .card {
+        padding: 12px; 
+      }
+    }
+
+    
+    @media screen and (max-width: 480px) {
+      header h1 {
+        font-size: 1.8em; 
+      }
+
+      nav a {
+        padding: 10px; 
+        font-size: 0.9em; 
+      }
+
+      .container {
+        padding: 10px;
+        gap: 10px;
+        
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      }
+
+      .card h3 {
+        font-size: 1.1em;
+      }
+
+      .card p {
+        font-size: 0.85em;
+      }
+
+      .card img {
+        height: 150px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Catálogo de Motos</h1>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="catalogo.html">Catálogo</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+  </header>
+  <div class="container">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1620085722666-c823c19fa9bb" alt="Yamaha R1">
+      <h3>Yamaha R1</h3>
+      <p>Potencia extrema para los amantes de la velocidad.</p>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1608653101263-b35a5d52f73c" alt="Honda CB500">
+      <h3>Honda CB500</h3>
+      <p>Comodidad y versatilidad para ciudad y carretera.</p>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1634378429273-6c2a60bb68e9" alt="Kawasaki Ninja 400">
+      <h3>Kawasaki Ninja 400</h3>
+      <p>Estilo deportivo con un rendimiento confiable.</p>
+    </div>
+    <div class="card">
+        <img src="
